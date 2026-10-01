@@ -1,0 +1,28 @@
+{
+  "name": "inventory-management-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Inventory Management API with Express and MongoDB",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "seed": "node src/scripts/seed.js",
+    "test": "node --test tests/*.test.js",
+    "demo:reset-password": "node src/scripts/reset-demo-password.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
